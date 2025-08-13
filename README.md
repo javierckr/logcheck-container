@@ -7,3 +7,5 @@ For testing container, you can run the following command:
 
 ```bash
 docker run  -ti -v {logsdir}:/var/log/external/:Z -v {logcheckconfigdir}:/etc/logcheck/ -v {esmtprcfile}:/etc/esmtprc -v {offsetdir}:/var/lib/logcheck/ logcheck
+
+This is intended to be used in kubernetes, but today it's WIP only.
