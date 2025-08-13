@@ -1,5 +1,9 @@
-# Getting started
+# Description
+container based on logcheck: https://logcheck.org/
 
-This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/.
+# Usage
 
-The application is based on the application from the getting started tutorial at https://github.com/docker/getting-started
+For testing container, you can run the following command:
+
+```bash
+docker run  -ti -v {logsdir}:/var/log/external/:Z -v {logcheckconfigdir}:/etc/logcheck/ -v {esmtprcfile}:/etc/esmtprc logcheck

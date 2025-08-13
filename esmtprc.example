@@ -1,0 +1,5 @@
+identity "user@example.com"
+hostname smtp.example.com:587
+username "username@example.com"
+password ":D"
+starttls required
