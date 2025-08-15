@@ -15,6 +15,4 @@ docker run  -ti -v {logsdir}:/var/log/external/:Z -v {logcheckconfigfile}:/etc/l
 - customserverrulefile: Custom rule for server ignore level, example: `logcheck-config-example/ignore.d.server/local-examplerule`
 - offsetdir: Persistent volume to store logs read by logcheck
 
-podman run  -ti -v /var/log/:/var/log/external/:Z -v /home/javier/logcheck.conf:/etc/logcheck/logcheck.conf -v /home/javier/logcheck.logfiles.d/:/etc/logcheck/logcheck.logfiles.d/ -v /home/javier/.esmtprc:/etc/esmtprc -v /home/javier/offset/:/var/lib/logcheck/ logcheck
-
 This is intended to be used in kubernetes, but today it's WIP only.
