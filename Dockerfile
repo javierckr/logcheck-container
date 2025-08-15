@@ -3,7 +3,7 @@
 FROM docker.io/library/debian:trixie-slim
 
 RUN apt update && \
-    apt install -y ca-certificates esmtp esmtp-run logcheck && \
+    apt install -y ca-certificates esmtp esmtp-run logcheck logcheck-database && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
