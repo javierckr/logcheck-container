@@ -16,3 +16,10 @@ docker run  -ti -v {logsdir}:/var/log/external/:Z -v {logcheckconfigfile}:/etc/l
 - offsetdir: Persistent volume to store logs read by logcheck
 
 This is intended to be used in kubernetes, but today it's WIP only.
+
+# Build from source
+Clone the repository and run the following command:
+
+```bash
+docker build -t logcheck .
+```
